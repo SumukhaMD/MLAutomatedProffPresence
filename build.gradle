@@ -1,0 +1,11 @@
+// <project>/build.gradle (root)
+plugins {
+    // No plugins applied here; versions are declared in settings.gradle
+}
+
+// (Optional) keep a clean task if it exists
+tasks.register("clean", Delete) {
+    delete(rootProject.buildDir)
+}
+
+

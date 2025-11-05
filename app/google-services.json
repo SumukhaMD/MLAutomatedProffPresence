@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "970608225865",
+    "firebase_url": "https://professorpresence-default-rtdb.firebaseio.com",
+    "project_id": "professorpresence",
+    "storage_bucket": "professorpresence.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:970608225865:android:73cf3a1c436685990bd998",
+        "android_client_info": {
+          "package_name": "com.example.proffpresenceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCptbx0ZtzwphP19AqU0UHbpDaW2wjPu8E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

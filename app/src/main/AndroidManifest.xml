@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.proffpresenceapp">
+
+    <!-- Hardware features -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Background location (only once) -->
+    <uses-permission
+        android:name="android.permission.ACCESS_BACKGROUND_LOCATION"
+        android:maxSdkVersion="34" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="Proff-Presence"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Launcher: Login first -->
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- App screens -->
+        <activity android:name=".ui.MainActivity" android:exported="false" />
+        <activity android:name=".ui.RegisterFaceActivity" android:exported="false" />
+        <activity android:name=".ui.LivenessActivity" android:exported="false" />
+        <activity android:name=".ui.FaceRecognitionActivity" android:exported="false" />
+        <activity android:name=".ui.SignupActivity" android:exported="false" />
+
+        <!-- Geofence receiver: explicit, no intent-filter -->
+        <receiver
+            android:name=".ui.geo.GeofenceReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

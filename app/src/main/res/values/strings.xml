@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ProffPresenceApp</string>
+    <string name="channel_geofence">Geofence Alerts</string>
+</resources>

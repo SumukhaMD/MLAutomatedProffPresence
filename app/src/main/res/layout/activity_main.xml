@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- At the top of your layout -->
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface"
+        app:title="ProfessorPresence"
+        app:titleCentered="true" />
+
+  <TextView
+      android:id="@+id/tvHello"
+      android:text="Welcome"
+      android:textStyle="bold"
+      android:textSize="18sp"
+      android:paddingBottom="16dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  <Button
+      android:id="@+id/btnTestDb"
+      android:text="Write test attendance ping"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"/>
+
+  <Button
+      android:id="@+id/btnArm"
+      android:text="Arm Geofence"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"/>
+
+  <!-- Force visible NOW so you can enroll.
+       We will lock it via Firebase later. -->
+  <Button
+      android:id="@+id/btnEnrollFace"
+      android:text="Enroll Face (admin-approved)"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="12dp"
+      android:visibility="visible"/>
+
+  <!-- TEMP debug button to open Liveness quickly -->
+  <Button
+      android:id="@+id/btnOpenLiveness"
+      android:text="Debug: Open Liveness"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+</LinearLayout>

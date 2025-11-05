@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="firebase_database_url" translatable="false">https://professorpresence-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">970608225865</string>
+    <string name="google_api_key" translatable="false">AIzaSyCptbx0ZtzwphP19AqU0UHbpDaW2wjPu8E</string>
+    <string name="google_app_id" translatable="false">1:970608225865:android:73cf3a1c436685990bd998</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCptbx0ZtzwphP19AqU0UHbpDaW2wjPu8E</string>
+    <string name="google_storage_bucket" translatable="false">professorpresence.firebasestorage.app</string>
+    <string name="project_id" translatable="false">professorpresence</string>
+</resources>
